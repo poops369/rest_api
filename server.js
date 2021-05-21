@@ -2,8 +2,7 @@ const express = require("express");
 const app = express();
 require("dotenv").config({ path: "./config/.env" });
 const connectDB = require("./config/connectDB");
-const contactRouter = require("./routes/Client");
-
+const contactRouter = require("./routes/Test");
 app.use(express.json());
 connectDB();
 app.use("/api/contacts", contactRouter);
